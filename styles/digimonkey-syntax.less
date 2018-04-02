@@ -389,4 +389,28 @@
       }
     }
   }
+
+  &--source&--js {
+    .syntax--regexp {
+      color: @digimonkey_hotgreen;
+    }
+  }
+
+  &--handlebars {
+    >.syntax--tag.syntax--html {
+    .syntax--entity {
+      font-weight: bold;
+      color: @digimonkey_scrubs;
+    }
+  }
+
+    .syntax--entity.syntax--name {
+      &.syntax--tag.syntax--handlebars {
+        color: @digimonkey_apple;
+      }
+      &.syntax--function {
+        color: @digimonkey_cream;
+      }
+    }
+  }
 }
